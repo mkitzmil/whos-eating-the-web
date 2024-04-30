@@ -1,0 +1,326 @@
+body{
+    font-family: monospace;
+    background-color: aliceblue;
+    margin: 0;
+}
+
+.content{
+    margin-left: max(15%, 120px);
+    margin-top: 0;
+}
+
+.collumn{
+    justify-content: center;
+    padding: 5px;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.block{
+    flex: 1 1 0;
+    border: 1px solid blue;
+    padding: 0 15px 15px 15px;
+    margin: 5px;
+}
+
+.block img{
+    margin: auto;
+    display: block;
+    max-width: 100%;
+
+}
+
+.block h3{
+    text-align: center;
+    border: 1px dotted red;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    padding-top:5px;
+    padding-bottom: 5px;
+}
+
+.block p {
+ 
+    margin: 15px 0 0 0px;
+    padding: 10px;
+}
+
+.homepage_description{
+    margin: 0 0 0 0px;
+    font-size: 12px;
+    text-align: center;
+    color: blue;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    min-width: 120px;
+    background-color: aliceblue;
+    border-right: 1px solid black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+.side-nav li:hover{
+    background-color: rgba(0, 0, 255, .4);
+    text-decoration: underline;
+}
+
+.side-nav li{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted black;
+    color: black;
+  }
+
+.side-nav a, .side-nav a:visited{
+    color:black;
+    text-decoration: none;
+}
+
+.model-display{
+    margin-left: 0;
+    width: 100%;
+    height: 60%;
+}
+
+model-viewer{
+    width:100%;
+    height: 600px;
+}
+
+.block a:visited, a:link{
+    color:blue;
+}
+
+
+.block a:hover{
+    color: red;
+}
+
+.active li{
+    background-color: rgba(0, 0, 255, .05);
+}
+
+.header {
+    margin: 0 0 0 0;
+
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+
+}
+
+.header h1{
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    color: red;
+    font-weight: normal;
+    padding:0;
+    border:1px dotted red;
+    margin:0;
+}
+h2{
+    font-size: 30px;
+    text-align: left;
+    color: blue;
+    font-weight: normal;
+    text-transform:uppercase;
+}
+
+
+.writing{
+    width: 50%;
+    min-width: 350px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.writing p{
+    padding-bottom: 15px;
+    padding-top:0px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+sup{
+    font-size: 10px;
+    vertical-align:5px;
+    padding-left:1px;
+}
+
+.footnote-section sup{
+    vertical-align:2px;
+}
+
+.footnote-section p{
+    color: blue;
+    font-size:12px;
+}
+
+.footnote-section a, .footnote-section a:visited{
+    text-decoration: underline;
+    color:blue;
+}
+
+.footnote a, .footnote a:visited, .footnote{
+    color:blue;
+    text-decoration: none;
+}
+.footnote a:hover{
+    color:red;
+}
+
+table{
+    font-size:15px;
+    width:100%;
+}
+td{
+    padding: 5px;
+    border-bottom:1px dotted blue;
+}
+
+.arrow{
+    color:red;
+}
+.writing a, .writing a:visited{
+    color: blue;
+}
+
+.library {
+    width: 55%;
+    min-width: 350px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.library table{
+    display: inline-table;
+}
+.library td{
+    border-bottom: 1px dotted blue;
+    padding-top: 10px;
+    vertical-align: bottom;
+    border-collapse: collapse;
+}
+.name{
+    width:65%;
+}
+.author{
+    width:25%;
+}
+.date{
+    width:5%;
+}
+.external-link{
+    width: 5%;
+    font-size: 30px;
+    line-height: 15px;
+}
+.library a, .library a:visited{
+    color:blue;
+    text-decoration: none;
+}
+
+.library a:hover, .library a:active{
+    color:red;
+}
+
+.library p{
+    margin-top: 5px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-bottom: 10px;
+    color: blue;
+}
+
+.model-description{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+    align-items: flex-start;
+
+
+}
+
+@media (max-width: 600px) {
+    .model-description {
+      flex-direction: column;
+      margin: auto;
+      width: 100%;
+      align-items: stretch;
+
+    }
+    div.model-desc-body {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    div.model-desc-title {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+  }
+
+.model-desc-body{
+    flex-basis: 100%;
+    margin: 20px 20px 0px 10px;
+
+
+}
+.model-desc-title{
+    flex-basis: 100%;
+    margin: 20px 10px 0px 20px;
+    border: 1px dotted red;
+
+
+}
+.model-desc-title h2{
+   margin: 0px;
+   text-align: center;
+   font-weight: bold;
+
+}
+.sci-name {
+ font-size: 20px;
+ text-transform: none;
+ font-style: italic;
+ font-weight: lighter;
+ margin:0;
+ color:blue;
+ text-align: center;
+ padding-bottom: 0px;
+
+}
+.model-desc-body p{
+    margin: 0px;
+    line-height: 1.5;
+    color: blue;
+}
+
+.next p{
+    margin-top: 15px;
+    font-weight: bold;
+}
+.next a, .next a:visited{
+    color:blue;
+}
+.next a:hover, .next a:active{
+    color: red;
+}

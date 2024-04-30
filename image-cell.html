@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title> *** </title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  </head>
+<body>
+
+<!-- Navigation Bar on Side -->
+<div class="side-nav">
+    <ul>
+      <a class="active" href="index.html"><li>FIELD GUIDE</li></a>
+      <a href="about.html"><li>ABOUT</li></a>
+      <a href="forever.html"><li>IS THE INTERNET 4EVER?</li></a>
+      <a href="library.html"><li>LIBRARY</li></a>
+      <a href="credits.html"><li>CREDITS</li></a>
+      </ul>
+</div>
+
+<!-- Content -->
+
+<div class="content">
+    <div class="model-display">
+      <model-viewer src="3D-models/IMAGE-CELL.glb" camera-controls tone-mapping="commerce" poster="_img/image_spin.gif" shadow-intensity="1" auto-rotate>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>
+    </model-viewer>
+    
+    </div>
+
+    <div class="model-description">
+      <div class="model-desc-title">
+        <h2>Image cell</h2>
+        <h5 class="sci-name">Lorem Ipsum</h5>
+      </div>
+      <div class="model-desc-body">
+        <p>Hyperlinks allow you to jump from one piece of online information to another, and serve as the thread that connects all different pieces of the web together. They are composed of hundreds of cells that join together to form a communicative network of transportation.</p>
+        </div>
+    </div>
+</div>
+</body>
