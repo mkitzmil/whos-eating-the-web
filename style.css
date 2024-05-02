@@ -324,3 +324,8 @@ td{
 .next a:hover, .next a:active{
     color: red;
 }
+
+.credit-writing {
+    text-align: center;
+    font-size: 10px;
+}
